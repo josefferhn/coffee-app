@@ -32,6 +32,11 @@ var app = new Framework7({
 		path: '/info-espresso/',
     	url: 'info-espresso.html',
     	name: 'info-espresso',
+  		},
+		{
+		path: '/sign-up/',
+    	url: 'sign-up.html',
+    	name: 'sign-up',
   		}
 	],
 	dialog: {
@@ -63,7 +68,7 @@ $$('#btnLogin').on('click', function (e) {
         $$('#form-login').trigger('reset');	
         app.loginScreen.close('#login');
 		
-		app.dialog.alert('¡ Welcome to Rungran Shop !');
+		app.dialog.alert('¡ Welcome to Coffee App !');
     }
 	
 });

@@ -37,23 +37,31 @@
 								
 				<h2 class="block-title">Menu</h2>
 				
-				<div class="list accordion-list">
+				<div class="list accordion-list" style="margin-bottom: 0;">
 					<ul>
 						<li class="accordion-item"><a href="#" class="item-content item-link">
 							<div class="item-inner">
-							  <div class="item-title">Item 1</div>
+							  <div class="item-title">Categories</div>
 							</div></a>
 						  <div class="accordion-item-content">
 							<div class="block">
 							 
-								<div class="list media-list">
+								<div class="list">
 								  <ul>
 									<li>
-									  <a href="/home/" class="item-link item-content panel-close">
-										<div class="item-media"><i class="material-icons">home</i></div>
+									  <a href="/products/" class="item-content panel-close">
 										<div class="item-inner">
 											<div class="item-title-row">
-												<div class="item-title">Home</div>
+												<div class="item-title">Hot</div>
+											</div> 					
+										</div>
+									  </a>
+									</li>
+									<li>
+									  <a href="/products/" class="item-content panel-close">
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div class="item-title">Cold</div>
 											</div> 					
 										</div>
 									  </a>
@@ -68,7 +76,7 @@
 					</ul>
 				</div>
 				
-				<div class="list media-list">
+				<div class="list media-list" style="margin-top: 0;">
 				  <ul>
 					<li>
 					  <a href="/home/" class="item-link item-content panel-close">
@@ -165,7 +173,7 @@
 				  
 				  <div class="block">
 				  
-					  <h3>Hello, <b>Invitado</b></h3>
+					  <h3>Hello, <b><span id="username">Invitado</span></b></h3>
 					  <h2 class="texto-inicial">Wanna get some <br>Coffee?</h2>
 					  
 					  <div class="banner-inicio">
@@ -380,8 +388,70 @@
 			  </div>
 			</nav>
 			
-		</div>
-	</div>
+
+			<section id="login" class="login-screen modal-in">
+				<div class="view">
+					<section class="page">
+						<div class="page-content login-screen-content">
+							<div class="login-screen-title">
+								<h2>Are You Member?</h2>
+								<h4>Sign in to Continue</h4>
+							</div>
+							<div class="block">
+							
+								<form id="form-login" autocomplete="off">
+								  <div class="list">
+									<ul>
+									  <li class="item-content item-input">
+										<div class="item-inner">
+										  <div class="item-title item-floating-label">Username</div>
+										  <div class="item-input-wrap">
+											<input type="text" id="userNameField" name="username" placeholder="Your username" required validate>
+										  </div>
+										</div>
+									  </li>
+									  <li class="item-content item-input">
+										<div class="item-inner">
+										  <div class="item-title item-floating-label">Password</div>
+										  <div class="item-input-wrap">
+											<input type="password" name="password" placeholder="Your password" required validate>
+										  </div>
+										</div>
+									  </li>
+									</ul>
+								  </div>
+								  <div class="list">
+									<ul>
+									  <li><a href="#" class="button button-fill" id="btnLogin">Sign In</a></li>
+									</ul>
+									<div class="block-footer">
+									  <p>Not member? <a href="/sign-up/" class="link">Sign Up</a></p>
+									  <p><a href="#" class="login-screen-close">Cancel</a></p>
+									</div>
+								  </div>
+								</form>
+								
+							</div>
+						</div><!-- /page-content -->
+					</section><!-- /page -->
+				</div><!-- /view -->
+			</section>
+			<!-- /login-screen -->
+		
+			
+			
+			
+			
+		</div> <!-- /view -->
+		
+		
+		
+		
+		
+		
+	
+	</div><!-- /app -->
+	
 	
 	
 	
